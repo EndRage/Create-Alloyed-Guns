@@ -1,0 +1,154 @@
+//import groovy.json.JsonOutput
+//import groovy.json.JsonSlurper
+
+buildscript {
+    repositories {
+        maven { url = 'https://maven.minecraftforge.net' }
+        maven { url = 'https://repo.spongepowered.org/maven' }
+        mavenCentral()
+    }
+    dependencies {
+        classpath group: 'net.minecraftforge.gradle', name: 'ForgeGradle', version: '5.1.+', changing: true
+        classpath 'org.spongepowered:mixingradle:0.7-SNAPSHOT'
+    }
+}
+apply plugin: 'net.minecraftforge.gradle'
+apply plugin: 'maven-publish'
+apply plugin: 'org.spongepowered.mixin'
+
+version = "1.0.2-1.18.2"
+group = "com.mrcrayfish"
+archivesBaseName = "alloyedguns"
+
+java.toolchain.languageVersion = JavaLanguageVersion.of(17)
+
+repositories {
+    maven {
+        name = 'tterrag maven'
+        url = 'https://maven.tterrag.com/'
+    }
+}
+
+sourceSets.main.resources { srcDir 'src/generated/resources' }
+
+mixin {
+    add sourceSets.main, "alloyedguns.refmap.json"
+}
+
+minecraft {
+    mappings channel: 'official', version: '1.18.2'
+
+    runs {
+        client {
+            workingDirectory project.file('run')
+            property 'mixin.env.disableRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+            property 'forge.logging.console.level', 'debug'
+            arg '-mixin.config=alloyedguns.mixins.json'
+            mods {
+                alloyedguns {
+                    source sourceSets.main
+                }
+            }
+        }
+
+        server {
+            workingDirectory project.file('run')
+            property 'mixin.env.disableRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+            property 'forge.logging.console.level', 'debug'
+            arg '-mixin.config=alloyedguns.mixins.json'
+            mods {
+                alloyedguns {
+                    source sourceSets.main
+                }
+            }
+        }
+
+        data {
+            workingDirectory project.file('run')
+            property 'mixin.env.disableRefMap', 'true'
+            property 'mixin.env.refMapRemappingFile', "${projectDir}/build/createSrgToMcp/output.srg"
+            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+            property 'forge.logging.console.level', 'debug'
+            args '--mod', 'alloyedguns', '--all', '--output', file('src/generated/resources/')
+            arg '-mixin.config=alloyedguns.mixins.json'
+            mods {
+                alloyedguns {
+                    source sourceSets.main
+                }
+            }
+        }
+    }
+}
+
+//processResources {
+//    doLast {
+//        fileTree(dir: outputs.files.asPath, include: "**/*.json").each {
+//            File file -> file.text = JsonOutput.toJson(new JsonSlurper().parse(file))
+//        }
+//    }
+//}
+
+repositories {
+    mavenLocal()
+    maven {
+        url "https://www.cursemaven.com"
+    }
+    maven {
+        name "Progwml6 maven"
+        url "https://dvs1.progwml6.com/files/maven/"
+    }
+    maven {
+        name "ModMaven"
+        url "https://modmaven.k-4u.nl"
+    }
+}
+
+dependencies {
+    minecraft 'net.minecraftforge:forge:1.18.2-40.1.60'
+    implementation fg.deobf('curse.maven:framework-549225:3723144')
+    implementation fg.deobf('curse.maven:configured-457570:3721946')
+    implementation fg.deobf('curse.maven:catalogue-459701:3721991')
+    implementation fg.deobf('curse.maven:backpacked-352835:3723045')
+    compileOnly fg.deobf('curse.maven:controllable-317269:3707285')
+    compileOnly fg.deobf("mezz.jei:jei-1.18.2:9.5.4.171:api")
+    runtimeOnly fg.deobf("mezz.jei:jei-1.18.2:9.5.4.171")
+    annotationProcessor 'org.spongepowered:mixin:0.8.5:processor'
+    implementation fg.deobf("com.simibubi.create:create-${create_minecraft_version}:${create_version}:slim") { transitive = false }
+    implementation fg.deobf("com.jozufozu.flywheel:flywheel-forge-${flywheel_minecraft_version}:${flywheel_version}")
+    implementation fg.deobf("com.tterrag.registrate:Registrate:${registrate_version}")
+    implementation fg.deobf("curse.maven:alloyed-564792:3943197")
+}
+
+jar {
+    manifest {
+        attributes([
+            "Specification-Title": "Alloyed Guns",
+            "Specification-Vendor": "MrCrayfish and End_Rage",
+            "Specification-Version": "1",
+            "Implementation-Title": "Gun Mod",
+            "Implementation-Version": project.version,
+            "Implementation-Vendor" : "MrCrayfish and End_Rage",
+            "Implementation-Timestamp": new Date().format("yyyy-MM-dd'T'HH:mm:ssZ"),
+            "MixinConfigs": "alloyedguns.mixins.json"
+        ])
+    }
+}
+
+jar.finalizedBy('reobfJar')
+
+publishing {
+    publications {
+        mavenJava(MavenPublication) {
+            artifact jar
+        }
+    }
+    repositories {
+        maven {
+            url "file:///X:/localmaven/mcmods"
+        }
+    }
+}
