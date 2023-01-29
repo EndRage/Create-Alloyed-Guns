@@ -1,0 +1,14 @@
+{
+  "type": "alloyedguns:workbench",
+  "materials": [
+    {
+            "item": "alloyed:steel_sheet"
+    },
+    {
+            "item": "alloyed:steel_ingot"
+    }
+  ],
+  "result": {
+    "item": "alloyedguns:light_grip"
+  }
+}

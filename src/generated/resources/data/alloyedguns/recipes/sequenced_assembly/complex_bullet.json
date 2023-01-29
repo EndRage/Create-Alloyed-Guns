@@ -1,0 +1,102 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "alloyedguns:complex_bullet_casing"
+  },
+  "transitionalItem": {
+    "item": "alloyedguns:incomplete_complex_bullet"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "alloyedguns:complex_bullet_casing"
+        },
+        [
+          {
+            "tag": "forge:gunpowder"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "alloyedguns:incomplete_complex_bullet"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "alloyedguns:incomplete_complex_bullet"
+        },
+        [
+          {
+            "item": "alloyedguns:steel_nugget"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "alloyedguns:incomplete_complex_bullet"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "alloyedguns:incomplete_complex_bullet"
+        },
+        [
+          {
+            "item": "alloyedguns:steel_nugget"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "alloyedguns:incomplete_complex_bullet"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "alloyedguns:incomplete_complex_bullet"
+        },
+        [
+          {
+            "item": "alloyedguns:steel_nugget"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "alloyedguns:incomplete_complex_bullet"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "alloyedguns:incomplete_complex_bullet"
+        }
+      ],
+      "results": [
+        {
+          "item": "alloyedguns:complex_bullet"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "alloyedguns:complex_bullet"
+    }
+  ],
+  "loops": 1
+}

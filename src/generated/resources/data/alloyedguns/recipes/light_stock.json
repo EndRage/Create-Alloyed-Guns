@@ -1,0 +1,12 @@
+{
+  "type": "alloyedguns:workbench",
+  "materials": [
+    {
+      "item": "alloyed:steel_sheet",
+      "count": 3
+    }
+  ],
+  "result": {
+    "item": "alloyedguns:light_stock"
+  }
+}

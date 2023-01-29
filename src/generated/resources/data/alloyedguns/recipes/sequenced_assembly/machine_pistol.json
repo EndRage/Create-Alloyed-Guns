@@ -1,0 +1,71 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+      "item": "minecraft:crossbow"
+  },
+  "transitionalItem": {
+      "item": "alloyedguns:unfinished_machine_pistol"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+      "item": "minecraft:crossbow"
+        },
+        [
+          {
+            "item": "alloyedguns:magazine"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "alloyedguns:unfinished_machine_pistol"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "alloyedguns:unfinished_machine_pistol"
+        },
+        [
+          {
+            "item": "create:small_steel_pipe"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "alloyedguns:unfinished_machine_pistol"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+      "item": "alloyedguns:unfinished_machine_pistol"
+        },
+        [
+          {
+            "item": "alloyedguns:basic_gun_kit"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "alloyedguns:unfinished_machine_pistol"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "alloyedguns:machine_pistol"
+    }
+  ],
+  "loops": 1
+}

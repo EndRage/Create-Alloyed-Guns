@@ -1,0 +1,30 @@
+{
+  "general": {
+    "auto": true,
+    "rate": 2,
+    "gripType": "alloyedguns:mini_gun",
+    "maxAmmo": 128,
+    "reloadAmount": 1,
+    "recoilAngle": 1.0,
+    "alwaysSpread": true,
+    "spread": 7.0
+  },
+  "projectile": {
+    "item": "alloyedguns:basic_bullet",
+    "damage": 3.0,
+    "size": 0.2,
+    "speed": 8.0,
+    "life": 30
+  },
+  "sounds": {
+    "fire": "alloyedguns:item.mini_gun.fire",
+    "reload": "alloyedguns:item.pistol.reload",
+    "enchantedFire": "alloyedguns:item.mini_gun.enchanted_fire"
+  },
+  "display": {
+    "flash": {
+      "yOffset": 2.7,
+      "zOffset": -11.51
+    }
+  }
+}

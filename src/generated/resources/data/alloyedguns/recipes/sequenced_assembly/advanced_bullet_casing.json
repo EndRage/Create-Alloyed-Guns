@@ -1,0 +1,48 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "alloyedguns:basic_bullet_casing"
+  },
+  "transitionalItem": {
+    "item": "alloyedguns:basic_bullet_casing"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "alloyedguns:basic_bullet_casing"
+        },
+        [
+          {
+            "item": "alloyedguns:basic_bullet_casing"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "alloyedguns:basic_bullet_casing"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "alloyedguns:basic_bullet_casing"
+        }
+      ],
+      "results": [
+        {
+          "item": "alloyedguns:advanced_bullet_casing"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "alloyedguns:advanced_bullet_casing"
+    }
+  ],
+  "loops": 1
+}

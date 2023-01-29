@@ -1,0 +1,16 @@
+{
+  "type": "alloyedguns:workbench",
+  "materials": [
+    {
+      "item": "minecraft:oak_planks",
+      "count": 2
+    },
+    {
+      "item": "alloyed:steel_ingot",
+      "count": 1
+    }
+  ],
+  "result": {
+    "item": "alloyedguns:weighted_stock"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "general": {
+    "rate": 100,
+    "gripType": "alloyedguns:one_handed",
+    "maxAmmo": 1,
+    "reloadAmount": 1,
+    "recoilAngle": 10.0,
+    "recoilAdsReduction": 0.5,
+    "alwaysSpread": true,
+    "spread": 15.0
+  },
+  "projectile": {
+    "item": "alloyedguns:crude_shot",
+    "damage": 9.0,
+    "size": 0.1,
+    "speed": 10.0,
+    "life": 25,
+    "gravity": true
+  },
+  "sounds": {
+    "fire": "alloyedguns:item.pistol.fire",
+    "reload": "alloyedguns:item.pistol.reload",
+    "cock": "alloyedguns:item.pistol.cock",
+    "silencedFire": "alloyedguns:item.pistol.silenced_fire",
+    "enchantedFire": "alloyedguns:item.pistol.enchanted_fire"
+  },
+  "display": {
+    "flash": {
+      "yOffset": 3.0,
+      "zOffset": -0.86
+    }
+  },
+  "modules": {
+    "zoom": {
+      "yOffset": 4.0,
+      "zOffset": -1.0,
+      "fovModifier": 0.7
+    }
+  }
+}

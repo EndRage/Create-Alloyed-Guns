@@ -1,0 +1,52 @@
+{
+  "general": {
+    "rate": 100,
+    "gripType": "alloyedguns:two_handed",
+    "maxAmmo": 1,
+    "recoilAngle": 25.0,
+    "recoilKick": 1.0,
+    "recoilDurationOffset": 0.5,
+    "recoilAdsReduction": 0.4,
+    "alwaysSpread": true,
+    "spread": 1.0
+  },
+  "projectile": {
+    "item": "alloyedguns:complex_bullet",
+    "damage": 18.0,
+    "size": 0.0625,
+    "speed": 25.0,
+    "life": 30,
+    "gravity": true
+  },
+  "sounds": {
+    "fire": "alloyedguns:item.heavy_rifle.fire",
+    "reload": "alloyedguns:item.pistol.reload",
+    "cock": "alloyedguns:item.heavy_rifle.cock",
+    "silencedFire": "alloyedguns:item.heavy_rifle.silenced_fire",
+    "enchantedFire": "alloyedguns:item.heavy_rifle.enchanted_fire"
+  },
+  "display": {
+    "flash": {
+      "yOffset": 3.0,
+      "zOffset": -22
+    }
+  },
+  "modules": {
+    "zoom": {
+      "yOffset": 4.7,
+      "zOffset": 5.0,
+      "fovModifier": 0.6
+    },
+    "attachments": {
+      "scope": {
+        "yOffset": 4.8,
+        "zOffset": 1.0,
+        "scale": 1.0
+      },
+      "underBarrel": {
+        "yOffset": 8.75,
+        "zOffset": 0.0
+      }
+    }
+  }
+}

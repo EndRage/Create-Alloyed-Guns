@@ -1,0 +1,15 @@
+{
+  "type": "alloyedguns:workbench",
+  "materials": [
+    {
+            "item": "minecraft:spyglass"
+    },
+    {
+            "item": "alloyed:steel_sheet"
+
+    }
+  ],
+  "result": {
+    "item": "alloyedguns:medium_scope"
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "F ",
+    "X#"
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:leather"
+    },
+    "F": {
+      "item": "minecraft:flint_and_steel"
+    },
+    "X": {
+      "tag": "forge:chests/trapped"
+    }
+  },
+  "result": {
+    "item": "alloyedguns:crude_gun_kit"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "type": "alloyedguns:workbench",
+  "materials": [
+    {
+      "item": "alloyedguns:small_steel_pipe"
+    },
+    {
+      "item": "minecraft:sponge"
+    }
+  ],
+  "result": {
+    "item": "alloyedguns:silencer"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "alloyedguns:flintlock"
+  },
+  "addition": {
+    "item": "create:small_iron_pipe"
+  },
+  "result": {
+    "item": "alloyedguns:unfinished_musket"
+  }
+}

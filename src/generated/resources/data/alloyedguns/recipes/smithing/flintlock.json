@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:smithing",
+  "base": {
+    "item": "alloyedguns:unfinished_flintlock"
+  },
+  "addition": {
+    "item": "alloyedguns:crude_gun_kit"
+  },
+  "result": {
+    "item": "alloyedguns:flintlock"
+  }
+}

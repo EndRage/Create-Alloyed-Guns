@@ -1,0 +1,71 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "minecraft:crossbow"
+  },
+  "transitionalItem": {
+    "item": "alloyedguns:unfinished_shotgun"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "minecraft:crossbow"
+        },
+        [
+          {
+            "item": "create:small_steel_pipe"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "alloyedguns:unfinished_shotgun"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "alloyedguns:unfinished_shotgun"
+        },
+        [
+          {
+            "item": "create:small_steel_pipe"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "alloyedguns:unfinished_shotgun"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "alloyedguns:unfinished_shotgun"
+        },
+        [
+          {
+            "item": "alloyedguns:basic_gun_kit"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "alloyedguns:unfinished_shotgun"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "alloyedguns:shotgun"
+    }
+  ],
+  "loops": 1
+}

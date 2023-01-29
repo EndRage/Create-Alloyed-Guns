@@ -1,0 +1,41 @@
+{
+  "type": "minecraft:smelting",
+  "ingredient": [
+    {
+      "item": "alloyed:steel_pickaxe"
+    },
+    {
+      "item": "alloyed:steel_shovel"
+    },
+    {
+      "item": "alloyed:steel_axe"
+    },
+    {
+      "item": "alloyed:steel_hoe"
+    },
+    {
+      "item": "alloyed:steel_sword"
+    },
+    {
+      "item": "alloyed:steel_helmet"
+    },
+    {
+      "item": "alloyed:steel_chestplate"
+    },
+    {
+      "item": "alloyed:steel_leggings"
+    },
+    {
+      "item": "alloyed:steel_boots"
+    },
+    {
+      "item": "alloyed:steel_shears"
+    },
+    {
+      "item": "alloyed:steel_fishing_rod"
+    }
+  ],
+  "result": "alloyedguns:steel_nugget",
+  "experience": 0.1,
+  "cookingtime": 200
+}

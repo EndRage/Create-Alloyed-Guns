@@ -1,0 +1,15 @@
+{
+  "type": "alloyedguns:workbench",
+  "materials": [
+    {
+            "item": "create:framed_glass_pane"
+    },
+    {
+            "item": "alloyed:steel_sheet"
+
+    }
+  ],
+  "result": {
+    "item": "alloyedguns:short_scope"
+  }
+}

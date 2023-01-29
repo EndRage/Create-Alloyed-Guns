@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "group": "steel_ingot",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "alloyedguns:steel_nugget"
+    }
+  },
+  "result": {
+    "item": "alloyed:steel_ingot"
+  }
+}

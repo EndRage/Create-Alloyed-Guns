@@ -1,0 +1,12 @@
+{
+  "type": "alloyedguns:workbench",
+  "materials": [
+    {
+      "item": "alloyed:steel_ingot",
+      "count": 2
+    }
+  ],
+  "result": {
+    "item": "alloyedguns:specialised_grip"
+  }
+}

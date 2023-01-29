@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "F F",
+    "F#F",
+    " F "
+  ],
+  "key": {
+    "#": {
+      "item": "minecraft:redstone"
+    },
+    "F": {
+      "item": "alloyed:steel_sheet"
+    }
+  },
+  "result": {
+    "item": "alloyedguns:magazine"
+  }
+}

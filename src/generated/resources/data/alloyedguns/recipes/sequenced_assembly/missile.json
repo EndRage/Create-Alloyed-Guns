@@ -1,0 +1,53 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "alloyedguns:compressed_air_canister"
+  },
+  "transitionalItem": {
+    "item": "alloyedguns:unarmed_missile"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "create:fluid_pipe"
+        },
+        [
+          {
+            "item": "alloyedguns:compressed_air_canister"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "alloyedguns:unarmed_missile"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "alloyedguns:unarmed_missile"
+        },
+        [
+          {
+            "item": "minecraft:tnt"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "alloyedguns:unarmed_missile"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "alloyedguns:missile"
+    }
+  ],
+  "loops": 1
+}

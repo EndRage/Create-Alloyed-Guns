@@ -1,0 +1,84 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "alloyedguns:advanced_bullet_casing"
+  },
+  "transitionalItem": {
+    "item": "alloyedguns:incomplete_advanced_bullet"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "alloyedguns:advanced_bullet_casing"
+        },
+        [
+          {
+            "tag": "forge:gunpowder"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "alloyedguns:incomplete_advanced_bullet"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "alloyedguns:incomplete_advanced_bullet"
+        },
+        [
+          {
+            "tag": "forge:nuggets/copper"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "alloyedguns:incomplete_advanced_bullet"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "alloyedguns:incomplete_advanced_bullet"
+        },
+        [
+          {
+            "tag": "forge:nuggets/copper"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "alloyedguns:incomplete_advanced_bullet"
+        }
+      ]
+    },
+    {
+      "type": "create:pressing",
+      "ingredients": [
+        {
+          "item": "alloyedguns:incomplete_advanced_bullet"
+        }
+      ],
+      "results": [
+        {
+          "item": "alloyedguns:advanced_bullet"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "alloyedguns:advanced_bullet"
+    }
+  ],
+  "loops": 1
+}

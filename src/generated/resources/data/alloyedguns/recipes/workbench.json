@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "WWW",
+    "SSS",
+    "S S"
+  ],
+  "key": {
+    "W": {
+      "tag": "minecraft:wooden_slabs"
+    },
+    "S": {
+            "tag": "forge:ingots/steel"
+    }
+  },
+  "result": {
+    "item": "alloyedguns:workbench"
+  }
+}

@@ -1,0 +1,53 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "alloyedguns:gunpowder_bottle"
+  },
+  "transitionalItem": {
+    "item": "alloyedguns:harmless_grenade"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "alloyedguns:gunpowder_bottle"
+        },
+        [
+          {
+            "tag": "forge:string"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "alloyedguns:harmless_grenade"
+        }
+      ]
+    },
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "alloyedguns:harmless_grenade"
+        },
+        [
+          {
+            "item": "create:crushed_iron_ore"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "alloyedguns:harmless_grenade"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "alloyedguns:grenade"
+    }
+  ],
+  "loops": 1
+}

@@ -1,0 +1,32 @@
+{
+  "type": "create:mechanical_crafting",
+  "pattern": [
+    "  A  ",
+    "SJJJS",
+    " RCV "
+  ],
+  "key": {
+    "J": {
+      "item": "create:chute"
+    },
+    "R": {
+      "item": "alloyed:steel_ingot"
+    },
+    "S": {
+      "item": "create:smart_chute"
+    },
+    "C": {
+      "item": "alloyedguns:complex_gun_kit"
+    },
+    "V": {
+      "item": "minecraft:crossbow"
+    },
+    "A": {
+      "item": "alloyedguns:advanced_gun_kit"
+    }
+  },
+  "result": {
+    "item": "alloyedguns:bazooka"
+  },
+  "acceptMirrored": true
+}

@@ -1,0 +1,14 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "create:iron_sheet"
+    }
+  },
+  "result": {
+    "item": "create:small_iron_pipe"
+  }
+}

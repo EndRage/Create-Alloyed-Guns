@@ -1,0 +1,35 @@
+{
+  "type": "create:sequenced_assembly",
+  "ingredient": {
+    "item": "alloyedguns:basic_bullet_casing"
+  },
+  "transitionalItem": {
+    "item": "alloyedguns:basic_bullet_casing"
+  },
+  "sequence": [
+    {
+      "type": "create:deploying",
+      "ingredients": [
+        {
+          "item": "alloyedguns:basic_bullet_casing"
+        },
+        [
+          {
+            "item": "minecraft:dried_kelp"
+          }
+        ]
+      ],
+      "results": [
+        {
+          "item": "alloyedguns:basic_bullet_casing"
+        }
+      ]
+    }
+  ],
+  "results": [
+    {
+      "item": "alloyedguns:empty_shell"
+    }
+  ],
+  "loops": 1
+}
