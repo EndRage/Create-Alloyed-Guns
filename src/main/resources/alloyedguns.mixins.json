@@ -1,0 +1,23 @@
+{
+    "required": true,
+    "package": "com.mrcrayfish.guns.mixin",
+    "compatibilityLevel": "JAVA_8",
+    "minVersion": "0.8",
+    "refmap": "alloyedguns.refmap.json",
+    "mixins": [
+        "common.EndPortalBlockMixin",
+        "common.LivingEntityMixin",
+        "common.SittingPhaseMixin"
+    ],
+    "client": [
+        "client.GameRendererMixin",
+        "client.LevelRendererMixin",
+        "client.MinecraftMixin",
+        "client.MouseHandlerMixin",
+        "client.PlayerItemInHandLayerMixin",
+        "client.PlayerModelMixin"
+    ],
+    "injectors": {
+        "defaultRequire": 1
+    }
+}

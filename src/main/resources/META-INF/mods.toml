@@ -1,0 +1,61 @@
+modLoader="javafml"
+loaderVersion="[39,)"
+license="GPL3"
+
+[[mods]]
+modId="alloyedguns"
+version="1.2.7"
+displayName="Create Alloyed Guns"
+updateJSONURL="https://raw.githubusercontent.com/MrCrayfish/ModUpdates/master/alloyedguns/update.json"
+displayURL="https://mrcrayfish.com/"
+logoFile= "../alloyedguns_banner.png"
+authors="MrCrayfish and End_Rage"
+description="Create Alloyed Guns adds in simple and straight forward weapons into Minecraft. They can be configured with many different attachments to add extra stats to your weapon and coloured to your personal liking. This mod adds ten weapons into the game!"
+
+[[dependencies.alloyedguns]]
+    modId="forge"
+    mandatory=true
+    versionRange="[39.0.45,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.alloyedguns]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.18.2,1.19)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.alloyedguns]]
+    modId="framework"
+    mandatory=true
+    versionRange="[0.2.3,)"
+    ordering="NONE"
+    side="BOTH"
+[[dependencies.alloyedguns]]
+    modId="controllable"
+    mandatory=false
+    versionRange="[0.14.1,)"
+    ordering="AFTER"
+    side="CLIENT"
+[[dependencies.alloyedguns]]
+    modId="backpacked"
+    mandatory=false
+    versionRange="[2.0.0,)"
+    ordering="AFTER"
+    side="CLIENT"
+[[dependencies.alloyedguns]]
+modId="create"
+mandatory=true
+versionRange="[0.5.0,)"
+ordering="AFTER"
+side="BOTH"
+[[dependencies.alloyedguns]]
+modId = "alloyed"
+mandatory = true
+versionRange ="[1.18.2,)"
+ordering = "NONE"
+side = "BOTH"
+
+
+[modproperties.alloyedguns]
+    catalogueImageIcon="alloyedguns_icon.png"
+    configuredBackground="minecraft:textures/block/stone_bricks.png"
